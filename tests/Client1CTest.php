@@ -1,6 +1,6 @@
 <?php
 
-use Example\Client1C\Client1C;
+use Php1C\Client1C;
 
 /**
  * Class Client1CTest
@@ -63,7 +63,7 @@ class Client1CTest extends Client1CTestBase
      */
     static private $skipTests = true;
 
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass() : void
     {
         if (file_exists(self::TEST_CONFIG_FILE)) {
             $config = require self::TEST_CONFIG_FILE;
@@ -95,7 +95,7 @@ class Client1CTest extends Client1CTestBase
         }
     }
 
-    public function setUp()
+    public function setUp() : void
     {
         if (self::$skipTests) {
             $this->markTestSkipped('tests of 1C client are not configured');
@@ -103,7 +103,7 @@ class Client1CTest extends Client1CTestBase
     }
 
     /**
-     * @return \Example\Client1C\Client1CInterface
+     * @return \Php1C\Client1CInterface
      */
     protected function getClient()
     {

@@ -1,20 +1,20 @@
 <?php
 
-use Example\Client1C\Client1CWrapper;
-use Example\Client1C\RequestTypes\RequestAddGoodsToOrder;
-use Example\Client1C\RequestTypes\RequestAddGoodToOrder;
-use Example\Client1C\RequestTypes\RequestAddOrder;
-use Example\Client1C\RequestTypes\RequestConfirmOrder;
-use Example\Client1C\RequestTypes\RequestResetOrder;
-use Example\Client1C\ResponseTypes\ResponseAddGoodsToOrder;
-use Example\Client1C\ResponseTypes\ResponseAddGoodToOrder;
-use Example\Client1C\ResponseTypes\ResponseAddOrder;
-use Example\Client1C\ResponseTypes\ResponseConfirmOrder;
-use Example\Client1C\ResponseTypes\ResponseResetOrder;
-use Example\Client1C\Testing\DumbClient1C;
-use Example\Client1C\Testing\MemoryProviders\ProviderClients;
-use Example\Client1C\Testing\MemoryProviders\ProviderGoods;
-use Example\Client1C\Testing\MemoryProviders\ProviderOrders;
+use Php1C\Client1CWrapper;
+use Php1C\RequestTypes\RequestAddGoodsToOrder;
+use Php1C\RequestTypes\RequestAddGoodToOrder;
+use Php1C\RequestTypes\RequestAddOrder;
+use Php1C\RequestTypes\RequestConfirmOrder;
+use Php1C\RequestTypes\RequestResetOrder;
+use Php1C\ResponseTypes\ResponseAddGoodsToOrder;
+use Php1C\ResponseTypes\ResponseAddGoodToOrder;
+use Php1C\ResponseTypes\ResponseAddOrder;
+use Php1C\ResponseTypes\ResponseConfirmOrder;
+use Php1C\ResponseTypes\ResponseResetOrder;
+use Php1C\Testing\DumbClient1C;
+use Php1C\Testing\MemoryProviders\ProviderClients;
+use Php1C\Testing\MemoryProviders\ProviderGoods;
+use Php1C\Testing\MemoryProviders\ProviderOrders;
 use PHPUnit\Framework\TestCase;
 
 /**

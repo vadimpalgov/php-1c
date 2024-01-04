@@ -1,7 +1,7 @@
 
 # Пример взаимодействия сайта с 1С через SoapClient 
 
-[![Build Status](https://travis-ci.org/ivan1993spb/php-1c-example.svg?branch=master)](https://travis-ci.org/ivan1993spb/php-1c-example) [![license](https://img.shields.io/github/license/ivan1993spb/php-1c-example.svg)](https://github.com/ivan1993spb/php-1c-example)
+[![license](https://img.shields.io/github/license/ivan1993spb/php-1c-example.svg)](https://github.com/ivan1993spb/php-1c-example)
 
 PHP, 1С, SOAP, SoapClient, Обмен.
 
@@ -9,6 +9,13 @@ PHP, 1С, SOAP, SoapClient, Обмен.
 
 Описаны PHP-классы для работы системы в продакшене, для локальной разработки (моки) и для тестирования.
 
+## Installation
+
+Download the library using Composer:
+
+```bash
+composer require vadimpalgov/php-1c
+```
 ## Веб-сервисы 1С
 
 В 1С существует возможность добавлять [веб-сервисы](http://v8.1c.ru/overview/Term_000000273.htm). Веб-сервисы 1С могут выполнять какие-то действия на стороне 1С. Веб-сервисы могут быть вызваны из вне через SOAP с помощью PHP. В PHP обращение к веб-сервисам через SOAP осуществляется с помощью [SoapClient](http://php.net/manual/ru/book.soap.php).

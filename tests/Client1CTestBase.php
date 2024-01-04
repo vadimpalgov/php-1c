@@ -1,17 +1,17 @@
 <?php
 
-use Example\Client1C\RequestTypes\RequestAddGoodsToOrder;
-use Example\Client1C\RequestTypes\RequestAddGoodToOrder;
-use Example\Client1C\RequestTypes\RequestAddOrder;
-use Example\Client1C\RequestTypes\RequestConfirmOrder;
-use Example\Client1C\RequestTypes\RequestResetOrder;
-use Example\Client1C\RequestTypes\GoodItem;
-use Example\Client1C\ResponseTypes\GoodState;
-use Example\Client1C\ResponseTypes\ResponseAddGoodsToOrder;
-use Example\Client1C\ResponseTypes\ResponseAddGoodToOrder;
-use Example\Client1C\ResponseTypes\ResponseAddOrder;
-use Example\Client1C\ResponseTypes\ResponseConfirmOrder;
-use Example\Client1C\ResponseTypes\ResponseResetOrder;
+use Php1C\RequestTypes\RequestAddGoodsToOrder;
+use Php1C\RequestTypes\RequestAddGoodToOrder;
+use Php1C\RequestTypes\RequestAddOrder;
+use Php1C\RequestTypes\RequestConfirmOrder;
+use Php1C\RequestTypes\RequestResetOrder;
+use Php1C\RequestTypes\GoodItem;
+use Php1C\ResponseTypes\GoodState;
+use Php1C\ResponseTypes\ResponseAddGoodsToOrder;
+use Php1C\ResponseTypes\ResponseAddGoodToOrder;
+use Php1C\ResponseTypes\ResponseAddOrder;
+use Php1C\ResponseTypes\ResponseConfirmOrder;
+use Php1C\ResponseTypes\ResponseResetOrder;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -59,7 +59,7 @@ abstract class Client1CTestBase extends TestCase
     protected static $goodUUIDMoreThen_0_4 = '';
 
     /**
-     * @return \Example\Client1C\Client1CInterface
+     * @return \Php1C\Client1CInterface
      */
     abstract protected function getClient();
 

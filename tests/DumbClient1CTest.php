@@ -1,11 +1,11 @@
 <?php
 
-use Example\Client1C\Testing\DumbClient1C;
-use Example\Client1C\Testing\MemoryProviders\ProviderClient;
-use Example\Client1C\Testing\MemoryProviders\ProviderClients;
-use Example\Client1C\Testing\MemoryProviders\ProviderGood;
-use Example\Client1C\Testing\MemoryProviders\ProviderGoods;
-use Example\Client1C\Testing\MemoryProviders\ProviderOrders;
+use Php1C\Testing\DumbClient1C;
+use Php1C\Testing\MemoryProviders\ProviderClient;
+use Php1C\Testing\MemoryProviders\ProviderClients;
+use Php1C\Testing\MemoryProviders\ProviderGood;
+use Php1C\Testing\MemoryProviders\ProviderGoods;
+use Php1C\Testing\MemoryProviders\ProviderOrders;
 use Ramsey\Uuid\Uuid;
 
 /**
@@ -14,11 +14,11 @@ use Ramsey\Uuid\Uuid;
 class DumbClient1CTest extends Client1CTestBase
 {
     /**
-     * @var Example\Client1C\Testing\DumbClient1C
+     * @var Php1C\Testing\DumbClient1C
      */
     private static $client;
 
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass() : void
     {
         // Корректный UUID
         self::$validUUID = '00000000-0000-0000-0000-000000000000';
@@ -81,7 +81,7 @@ class DumbClient1CTest extends Client1CTestBase
     }
 
     /**
-     * @return \Example\Client1C\Client1CInterface
+     * @return \Php1C\Client1CInterface
      */
     protected function getClient()
     {

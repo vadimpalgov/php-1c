@@ -1,10 +1,11 @@
 {
-    "name": "ivan1993spb/php-1c-example",
-    "description": "An example for sending request to 1С from PHP",
+    "name": "vadimpalgov/php-1c",
+    "description": "Sending request to 1С from PHP",
     "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Example\\": "src/Example/"
+            "Php1C\\": "src/"
         }
     },
     "autoload-dev": {
@@ -13,16 +14,24 @@
         ]
     },
     "require": {
-        "php": ">=7.0.0",
+        "php": ">=8.1",
         "ext-soap": "*",
         "ramsey/uuid": "^3.5"
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.5"
+        "phpunit/phpunit": "^10"
     },
     "scripts": {
         "test": [
             "./vendor/bin/phpunit"
         ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "8.1"
+        }
     }
 }

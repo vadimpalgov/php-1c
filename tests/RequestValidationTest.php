@@ -1,11 +1,11 @@
 <?php
 
-use Example\Client1C\RequestTypes\GoodItem;
-use Example\Client1C\RequestTypes\RequestAddGoodsToOrder;
-use Example\Client1C\RequestTypes\RequestAddGoodToOrder;
-use Example\Client1C\RequestTypes\RequestAddOrder;
-use Example\Client1C\RequestTypes\RequestConfirmOrder;
-use Example\Client1C\RequestTypes\RequestResetOrder;
+use Php1C\RequestTypes\GoodItem;
+use Php1C\RequestTypes\RequestAddGoodsToOrder;
+use Php1C\RequestTypes\RequestAddGoodToOrder;
+use Php1C\RequestTypes\RequestAddOrder;
+use Php1C\RequestTypes\RequestConfirmOrder;
+use Php1C\RequestTypes\RequestResetOrder;
 use PHPUnit\Framework\TestCase;
 
 class RequestValidationTest extends TestCase
@@ -15,7 +15,7 @@ class RequestValidationTest extends TestCase
 
     /**
      * @small
-     * @expectedException \Example\Client1C\Exceptions\InvalidRequestParamException
+     * @expectedException \Php1C\Exceptions\InvalidRequestParamException
      */
     public function testGoodItemEmptyGoodUUID()
     {
@@ -24,7 +24,7 @@ class RequestValidationTest extends TestCase
 
     /**
      * @small
-     * @expectedException \Example\Client1C\Exceptions\InvalidRequestParamException
+     * @expectedException \Php1C\Exceptions\InvalidRequestParamException
      */
     public function testGoodItemInvalidGoodUUID()
     {
@@ -33,7 +33,7 @@ class RequestValidationTest extends TestCase
 
     /**
      * @small
-     * @expectedException \Example\Client1C\Exceptions\InvalidRequestParamException
+     * @expectedException \Php1C\Exceptions\InvalidRequestParamException
      */
     public function testGoodItemInvalidCount()
     {
@@ -50,7 +50,7 @@ class RequestValidationTest extends TestCase
 
     /**
      * @small
-     * @expectedException \Example\Client1C\Exceptions\InvalidRequestParamException
+     * @expectedException \Php1C\Exceptions\InvalidRequestParamException
      */
     public function testRequestAddGoodsToOrderEmptyOrderUUID()
     {
@@ -59,7 +59,7 @@ class RequestValidationTest extends TestCase
 
     /**
      * @small
-     * @expectedException \Example\Client1C\Exceptions\InvalidRequestParamException
+     * @expectedException \Php1C\Exceptions\InvalidRequestParamException
      */
     public function testRequestAddGoodsToOrderInvalidOrderUUID()
     {
@@ -76,7 +76,7 @@ class RequestValidationTest extends TestCase
 
     /**
      * @small
-     * @expectedException \Example\Client1C\Exceptions\InvalidRequestParamException
+     * @expectedException \Php1C\Exceptions\InvalidRequestParamException
      */
     public function testRequestAddGoodToOrderEmptyOrderUUID()
     {
@@ -85,7 +85,7 @@ class RequestValidationTest extends TestCase
 
     /**
      * @small
-     * @expectedException \Example\Client1C\Exceptions\InvalidRequestParamException
+     * @expectedException \Php1C\Exceptions\InvalidRequestParamException
      */
     public function testRequestAddGoodToOrderInvalidOrderUUID()
     {
@@ -94,7 +94,7 @@ class RequestValidationTest extends TestCase
 
     /**
      * @small
-     * @expectedException \Example\Client1C\Exceptions\InvalidRequestParamException
+     * @expectedException \Php1C\Exceptions\InvalidRequestParamException
      */
     public function testRequestAddGoodToOrderEmptyGoodUUID()
     {
@@ -103,7 +103,7 @@ class RequestValidationTest extends TestCase
 
     /**
      * @small
-     * @expectedException \Example\Client1C\Exceptions\InvalidRequestParamException
+     * @expectedException \Php1C\Exceptions\InvalidRequestParamException
      */
     public function testRequestAddGoodToOrderInvalidGoodUUID()
     {
@@ -112,7 +112,7 @@ class RequestValidationTest extends TestCase
 
     /**
      * @small
-     * @expectedException \Example\Client1C\Exceptions\InvalidRequestParamException
+     * @expectedException \Php1C\Exceptions\InvalidRequestParamException
      */
     public function testRequestAddGoodToOrderInvalidCount()
     {
@@ -129,7 +129,7 @@ class RequestValidationTest extends TestCase
 
     /**
      * @small
-     * @expectedException \Example\Client1C\Exceptions\InvalidRequestParamException
+     * @expectedException \Php1C\Exceptions\InvalidRequestParamException
      */
     public function testRequestAddOrderEmptyClientUUID()
     {
@@ -138,7 +138,7 @@ class RequestValidationTest extends TestCase
 
     /**
      * @small
-     * @expectedException \Example\Client1C\Exceptions\InvalidRequestParamException
+     * @expectedException \Php1C\Exceptions\InvalidRequestParamException
      */
     public function testRequestAddOrderInvalidClientUUID()
     {
@@ -155,7 +155,7 @@ class RequestValidationTest extends TestCase
 
     /**
      * @small
-     * @expectedException \Example\Client1C\Exceptions\InvalidRequestParamException
+     * @expectedException \Php1C\Exceptions\InvalidRequestParamException
      */
     public function testRequestConfirmOrderEmptyOrderUUID()
     {
@@ -164,7 +164,7 @@ class RequestValidationTest extends TestCase
 
     /**
      * @small
-     * @expectedException \Example\Client1C\Exceptions\InvalidRequestParamException
+     * @expectedException \Php1C\Exceptions\InvalidRequestParamException
      */
     public function testRequestConfirmOrderInvalidOrderUUID()
     {
@@ -181,7 +181,7 @@ class RequestValidationTest extends TestCase
 
     /**
      * @small
-     * @expectedException \Example\Client1C\Exceptions\InvalidRequestParamException
+     * @expectedException \Php1C\Exceptions\InvalidRequestParamException
      */
     public function testRequestResetOrderEmptyOrderUUID()
     {
@@ -190,7 +190,7 @@ class RequestValidationTest extends TestCase
 
     /**
      * @small
-     * @expectedException \Example\Client1C\Exceptions\InvalidRequestParamException
+     * @expectedException \Php1C\Exceptions\InvalidRequestParamException
      */
     public function testRequestResetOrderInvalidOrderUUID()
     {

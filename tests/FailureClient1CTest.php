@@ -1,11 +1,11 @@
 <?php
 
-use Example\Client1C\RequestTypes\RequestAddGoodsToOrder;
-use Example\Client1C\RequestTypes\RequestAddGoodToOrder;
-use Example\Client1C\RequestTypes\RequestAddOrder;
-use Example\Client1C\RequestTypes\RequestConfirmOrder;
-use Example\Client1C\RequestTypes\RequestResetOrder;
-use Example\Client1C\Testing\FailureClient1C;
+use Php1C\RequestTypes\RequestAddGoodsToOrder;
+use Php1C\RequestTypes\RequestAddGoodToOrder;
+use Php1C\RequestTypes\RequestAddOrder;
+use Php1C\RequestTypes\RequestConfirmOrder;
+use Php1C\RequestTypes\RequestResetOrder;
+use Php1C\Testing\FailureClient1C;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -17,7 +17,7 @@ class FailureClient1CTest extends TestCase
 
     /**
      * @small
-     * @expectedException Example\Client1C\Exceptions\MethodInvocationException
+     * @expectedException Php1C\Exceptions\MethodInvocationException
      */
     public function testMethodAddOrder()
     {
@@ -27,7 +27,7 @@ class FailureClient1CTest extends TestCase
 
     /**
      * @small
-     * @expectedException Example\Client1C\Exceptions\MethodInvocationException
+     * @expectedException Php1C\Exceptions\MethodInvocationException
      */
     public function testMethodAddGoodToOrder()
     {
@@ -37,7 +37,7 @@ class FailureClient1CTest extends TestCase
 
     /**
      * @small
-     * @expectedException Example\Client1C\Exceptions\MethodInvocationException
+     * @expectedException Php1C\Exceptions\MethodInvocationException
      */
     public function testMethodAddGoodsToOrder()
     {
@@ -47,7 +47,7 @@ class FailureClient1CTest extends TestCase
 
     /**
      * @small
-     * @expectedException Example\Client1C\Exceptions\MethodInvocationException
+     * @expectedException Php1C\Exceptions\MethodInvocationException
      */
     public function testMethodConfirmOrder()
     {
@@ -57,7 +57,7 @@ class FailureClient1CTest extends TestCase
 
     /**
      * @small
-     * @expectedException Example\Client1C\Exceptions\MethodInvocationException
+     * @expectedException Php1C\Exceptions\MethodInvocationException
      */
     public function testMethodResetOrder()
     {
